@@ -1,12 +1,7 @@
 package tests.misc;
 
-public class InheritedCopyable extends BaseCopyable {
+public class InheritedCopyable extends BaseCopyable<InheritedCopyable> {
     protected boolean hasInheritedCopyable(){
         return false;
-    }
-    @Override
-    public <E extends BaseCopyable> void copy(E other) {
-        super.copy(other);
-
     }
 }
